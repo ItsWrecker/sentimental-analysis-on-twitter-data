@@ -1,0 +1,64 @@
+{% extends "personal/header.html" %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-4">
+		<div class="progress">
+		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+		aria-valuemin="0" aria-valuemax="50" style="width:40%">{{ positive  }} % Positive Tweets
+		<span class="sr-only"></span>
+		</div>
+		</div><div class="progress">
+		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+		aria-valuemin="0" aria-valuemax="50" style="width:30%">{{ negative }} % Negative Tweets
+		<span class="sr-only"></span>
+		</div>
+		</div><div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="70"
+		aria-valuemin="0" aria-valuemax="50" style="width:60%">{{ neutral  }} % Neutral 
+		<span class="sr-only"></span>
+		</div>
+		</div>
+	</div>
+  <div class="col-sm-4">
+  
+	 
+
+
+
+
+
+  
+  
+  </div>
+  <div class="col-sm-4"></div>
+</div>
+<hr><hr>
+<div class="row">
+	<div class="col-sm-12">
+		<p> {{ptweets}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{ntweets}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p>{{n1}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p> {{p1}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p> {{p2}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{n2}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p> {{p2}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p> {{p3}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{n3}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p> {{p5}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p> {{p4}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{n4}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p>{{n5}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p> {{p6}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p> {{p7}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{n6}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p>{{n7}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p> {{p8}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p> {{p9}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{n8}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p> {{p10}}  <button type="button" class="btn btn-success"><span class="badge">positive</span></button></p>
+		<p>{{n9}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+		<p>{{n10}}  <button type="button" class="btn btn-danger"><span class="badge">negative</span></button></p>
+	</div>
+</div>
+
+{% endblock %}
